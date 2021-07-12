@@ -1,0 +1,49 @@
+body{
+    background-image: url(Assets/milky-way-starry-sky-night-sky-star-956999.jpeg);
+    background-position: center;
+}
+
+#header{    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:translate( -50%, -50%);
+    font-family:'Press Start 2p', cursive; 
+    text-align: center;
+    color: white; 
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: #39FF14;    }
+    25%{    color: red; }
+    50%{    color: #39FF14; }
+    75%{    color: red;  }
+    100%{   color: #39FF14;    }
+}
+
+#hide{
+    display: none;
+}
+
+#requestTrippyGif:hover + #hide{
+    display: block;
+    color: white;
+}
+
+#requestTrippyGif{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:translate( -50%, -50%);
+    height: 200px;
+    width: auto;
+    cursor:grab;
+}
+
+#theGifItSelf{
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate( -50%, -50%);   
+}
